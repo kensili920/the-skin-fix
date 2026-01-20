@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin Science Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #2a6f97;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    label {
+      font-weight: bold;
+    }
+    select, button {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #2a6f97;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1f4f6f;
+    }
+    .results {
+      margin-top: 20px;
+      padding: 15px;
+      background: #eef6fb;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Skin Science Lab</h1>
+    <p>Evidence-based skincare education by a student researcher</p>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>About This Project</h2>
+      <p>
+        Skin Science Lab is a student-created educational project that explains
+        skincare ingredients using chemistry and biology. This site does not
+        provide medical advice.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Ingredient Finder</h2>
+      <label for="condition">Choose your skin concern:</label><br>
+      <select id="condition">
+        <option value="">-- Select --</option>
+        <option value="dry">Dry Skin</option>
+        <option value="acne">Acne</option>
+        <option value="inflammation">Inflammation</option>
+        <option value="sensitive">Sensitive Skin</option>
+      </select><br>
+      <button onclick="findIngredients()">Find Ingredients</button>
+
+      <div id="results" class="results"></div>
+    </div>
+
+    <div class="section">
+      <h2>Weekly Ingredient Review</h2>
+      <p><strong>Niacinamide</strong></p>
+      <ul>
+        <li>Function: Improves barrier function and reduces inflammation</li>
+        <li>Benefits: Acne-prone, sensitive, and oily skin</li>
+        <li>Science: Supports ceramide synthesis in the epidermis</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Skin Science Lab | Educational Use Only
+  </footer>
+
+  <script>
+    function findIngredients() {
+      const condition = document.getElementById("condition").value;
+      const results = document.getElementById("results");
+
+      let text = "";
+
+      if (condition === "dry") {
+        text = "Recommended ingredients: Glycerin, Hyaluronic Acid, Ceramides";
+      } else if (condition === "acne") {
+        text = "Recommended ingredients: Salicylic Acid, Niacinamide, Zinc";
+      } else if (condition === "inflammation") {
+        text = "Recommended ingredients: Niacinamide, Centella Asiatica, Aloe Vera";
+      } else if (condition === "sensitive") {
+        text = "Recommended ingredients: Ceramides, Colloidal Oatmeal, Panthenol";
+      } else {
+        text = "Please select a skin concern.";
+      }
+
+      results.innerText = text;
+    }
+  </script>
+
+</body>
+</html>
