@@ -77,6 +77,112 @@
       font-size: 0.9rem;
       color: #777;
     }
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin Science Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .title {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 3.8rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+  
+.tagline {
+  font-style: italic;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: black;
+}
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FAEBEC;
+      color: black;
+    }
+    header {
+      background-color: #F8E3E4;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+    h2 {
+      color: #000000;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    label {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    select, button {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #F4D7D8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #F8E3E4;
+    }
+    .results {
+      margin-top: 20px;
+      padding: 15px;
+      background: #FAEBEC;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .skin-layer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* makes it mobile-friendly */
+}
+
+.skin-layer img {
+  width: 200px;        /* adjust size as needed */
+  border-radius: 8px;  /* rounded corners */
+  border: 1px solid #ddd;
+}
+
+.layer-text h3 {
+  margin: 0 0 5px 0;
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+.layer-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
   </style>
 </head>
 <body>
@@ -112,6 +218,184 @@
     to understand why certain ingredients matter, we’ve got your back — quietly,
     confidently, and always with your best interest in mind.
   </p>
+    .skin-layer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* makes it mobile-friendly */
+}
+
+.skin-layer img {
+  width: 200px;        /* adjust size as needed */
+  border-radius: 8px;  /* rounded corners */
+  border: 1px solid #ddd;
+}
+
+.layer-text h3 {
+  margin: 0 0 5px 0;
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+.layer-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+</div>
+
+<div class="section">
+  <h2>How the Skin Works</h2>
+
+  <div class="skin-layer">
+    <img src="12d46775-c0de-445a-bcdd-2c6acf851005.jpeg" alt="Epidermis layer diagram">
+    <div class="layer-text">
+      <h3>Epidermis</h3>
+      <p>The outer layer protects you from germs and keeps moisture in. It constantly sheds dead cells and makes new ones.</p>
+    </div>
+  </div>
+
+  <div class="skin-layer">
+    <img src="8d8bc3bd-4d62-43c2-824f-6113527bf219.jpeg" alt="Dermis layer diagram">
+    <div class="layer-text">
+      <h3>Dermis</h3>
+      <p>The middle layer gives skin strength and flexibility. It contains collagen, elastin, fibroblasts, hair follicles, sweat glands, and blood vessels.</p>
+    </div>
+  </div>
+
+  <div class="skin-layer">
+    <img src="245608b3-233e-4646-9e8f-3f6e741beda7.png" alt="Hypodermis layer diagram">
+    <div class="layer-text">
+      <h3>Hypodermis</h3>
+      <p>The deepest layer stores fat, cushions the body, and helps regulate temperature.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="section">
+      <h2>Ingredient Finder</h2>
+      <label for="condition">Choose your skin concern:</label><br>
+      <select id="condition">
+        <option value="">-- Select --</option>
+        <option value="dry">Dry Skin</option>
+        <option value="acne">Acne</option>
+        <option value="inflammation">Inflammation</option>
+        <option value="sensitive">Sensitive Skin</option>
+      </select><br>
+      <button onclick="findIngredients()">Find Ingredients</button>
+
+      <div id="results" class="results"></div>
+    </div>
+
+    <div class="section">
+      <h2>Weekly Ingredient Review</h2>
+      <p><strong>Niacinamide</strong></p>
+      <ul>
+        <li>Function: Improves barrier function and reduces inflammation</li>
+        <li>Benefits: Acne-prone, sensitive, and oily skin</li>
+        <li>Science: Supports ceramide synthesis in the epidermis</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Skin Science Lab | Educational Use Only
+  </footer>
+
+  <script>
+    function findIngredients() {
+      const condition = document.getElementById("condition").value;
+      const results = document.getElementById("results");
+
+      let text = "";
+
+      if (condition === "dry") {
+        text = "Recommended ingredients: Glycerin, Hyaluronic Acid, Ceramides";
+      } else if (condition === "acne") {
+        text = "Recommended ingredients: Salicylic Acid, Niacinamide, Zinc";
+      } else if (condition === "inflammation") {
+        text = "Recommended ingredients: Niacinamide, Centella Asiatica, Aloe Vera";
+      } else if (condition === "sensitive") {
+        text = "Recommended ingredients: Ceramides, Colloidal Oatmeal, Panthenol";
+      } else {
+        text = "Please select a skin concern.";
+      }
+
+      results.innerText = text;
+    }
+  </script>
+
+</body>
+</html>
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="title">The Skin Fix</h1>
+<p class="tagline">your skin, our secret</p>
+  </header>
+
+  <main>
+  <div class="section">
+  <h2>About The Skin Fix</h2>
+
+  <p>
+    Welcome to <em>The Skin Fix</em>. Let’s be honest — you don’t really know half
+    the stuff you’re putting on your face. That’s where we come in.
+  </p>
+
+  <p>
+    Think of us as your quiet advisors, the ones who know the truth behind the hype.
+  </p>
+
+  <p>
+    Every week, we dive into the products everyone’s talking about, break down what’s
+    real, what’s not, and help you figure out what actually works for your skin.
+    No fluff. No clickbait. Just the facts — whispered, analyzed, and delivered
+    directly to you.
+  </p>
+
+  <p>
+    We mix <strong>science, experience, and a little curiosity</strong> to bring you
+    the inside scoop. Whether you’re wondering about that new viral serum or trying
+    to understand why certain ingredients matter, we’ve got your back — quietly,
+    confidently, and always with your best interest in mind.
+  </p>
+    
+</div>
+
+<div class="section">
+  <h2>How the Skin Works</h2>
+
+  <div class="skin-layer">
+    <img src="12d46775-c0de-445a-bcdd-2c6acf851005.jpeg" alt="Epidermis layer diagram">
+    <div class="layer-text">
+      <h3>Epidermis</h3>
+      <p>The outer layer protects you from germs and keeps moisture in. It constantly sheds dead cells and makes new ones.</p>
+    </div>
+  </div>
+
+  <div class="skin-layer">
+    <img src="8d8bc3bd-4d62-43c2-824f-6113527bf219.jpeg" alt="Dermis layer diagram">
+    <div class="layer-text">
+      <h3>Dermis</h3>
+      <p>The middle layer gives skin strength and flexibility. It contains collagen, elastin, fibroblasts, hair follicles, sweat glands, and blood vessels.</p>
+    </div>
+  </div>
+
+  <div class="skin-layer">
+    <img src="245608b3-233e-4646-9e8f-3f6e741beda7.png" alt="Hypodermis layer diagram">
+    <div class="layer-text">
+      <h3>Hypodermis</h3>
+      <p>The deepest layer stores fat, cushions the body, and helps regulate temperature.</p>
+    </div>
+  </div>
 </div>
 
     <div class="section">
