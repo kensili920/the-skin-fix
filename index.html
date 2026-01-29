@@ -124,6 +124,24 @@
   <p class="tagline">your skin, our secret</p>
 </header>
 
+  .ingredient-card {
+  background: #FAEBEC;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.featured {
+  border: 2px solid #F4D7D8;
+  background: #FFF5F6;
+}
+
+.citation {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+}
+
 <main>
 
   <div class="section">
@@ -193,15 +211,42 @@
     <div id="results" class="results"></div>
   </div>
 
-  <div class="section">
-    <h2>Weekly Ingredient Review</h2>
-    <p><strong>Niacinamide</strong></p>
-    <ul>
-      <li>Function: Improves barrier function</li>
-      <li>Benefits: Acne-prone and sensitive skin</li>
-      <li>Science: Supports ceramide synthesis</li>
-    </ul>
+  <div class="section" id="weekly-ingredient">
+
+  <h2>Ingredient of the Week</h2>
+
+  <div class="ingredient-card featured">
+    <h3>Niacinamide</h3>
+
+    <p><strong>What it is:</strong><br>
+    A form of vitamin B3 that strengthens the skin barrier.</p>
+
+    <p><strong>How it works:</strong><br>
+    Supports ceramide production and reduces inflammation in the epidermis.</p>
+
+    <p><strong>Who benefits:</strong><br>
+    Acne-prone, oily, and sensitive skin types.</p>
+
+    <p class="citation">
+      Evidence: Supported by dermatological research and guidance from the
+      American Academy of Dermatology.
+    </p>
   </div>
+
+</div>
+
+
+<div class="section" id="ingredient-library">
+
+  <h2>Ingredient Library</h2>
+  <p>Previously featured ingredients archived for reference.</p>
+
+  <!-- Archived ingredients will go here -->
+
+</div>
+
+
+    
 
 </main>
 
