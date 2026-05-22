@@ -20,27 +20,31 @@ const IngredientOfTheWeek = () => (
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6 }}
         >
-          <h3 className="text-3xl font-semibold mb-6">Retinol</h3>
+          <h3 className="text-3xl font-semibold mb-6">Ectoine</h3>
 
           <div className="space-y-5 text-foreground/80 leading-relaxed">
             <div>
               <h4 className="font-semibold text-foreground mb-1">What it is:</h4>
-              <p>A form of vitamin A that helps to prevent aging and stop acne. It can be purchased over the counter or prescribed.</p>
+              <p>A stress-protection molecule that hydrates, prevents moisture loss, and 
+                reduces inflammation.</p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-1">How it works:</h4>
-              <p>Retinol helps your skin make new cells faster, which keeps pores clear and prevents them from getting clogged. It also gently exfoliates and boosts collagen, so your skin looks smoother and fresher.</p>
+              <p>Ectoine forms a protective water shield around cells, helping them stay hydrated
+              and protected from irritation, dryness, and environmental stress.</p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-1">Who benefits:</h4>
-              <p>Teens and adults who have acne, clogged pores, or uneven skin texture. Especially helpful for regular breakouts or oily skin. Also good for early fine lines.</p>
+              <p>It's helpful for people with dry, sensitive, or irritated skin, eyes or airways. 
+              It's often used for eczema,allergies, dry eyes, and inflammation because
+              it's gentle and soothing.</p>
             </div>
           </div>
 
           <p className="evidence-note">
             Evidence: Supported by dermatological research from{" "}
-            <a href="https://my.clevelandclinic.org" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:opacity-80">
-              Cleveland Clinic
+            <a href="https://www.nlm.nih.gov" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:opacity-80">
+              The National Library of Medicine
             </a>.
           </p>
         </motion.div>
