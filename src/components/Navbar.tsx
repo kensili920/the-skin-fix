@@ -1,12 +1,14 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Skin Layers", href: "#skin-layers" },
-  { label: "Finder", href: "#finder" },
-  { label: "Library", href: "#library" },
-  { label: "Quiz", href: "#quiz" },
+  { label: "About", href: "/#about" },
+  { label: "Skin Layers", href: "/#skin-layers" },
+  { label: "Finder", href: "/#finder" },
+  { label: "Library", href: "/#library" },
+  { label: "Quiz", href: "/#quiz" },
+  { label: "Journal", href: "/blog", route: true },
 ];
 
 const Navbar = () => {
