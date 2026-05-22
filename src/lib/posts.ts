@@ -40,7 +40,7 @@ function slugFromPath(path: string): string {
 
 export const allPosts: Post[] = Object.entries(modules)
   .map(([path, raw]) => {
-    const { data, content } = matter(raw);
+    const { data, content } = parseFrontmatter(raw);
     return {
       slug: slugFromPath(path),
       title: String(data.title ?? slugFromPath(path)),
