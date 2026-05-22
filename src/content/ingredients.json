@@ -54,5 +54,13 @@
     "whoBenefits": "People with mild to moderate acne, especially if they also deal with redness or dark marks. Often recommended for sensitive skin because it tends to be less irritating.",
     "evidence": "Supported by dermatological research from The National Library of Medicine.",
     "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov"
-  }
+  },
+  {
+    "name": "Retinol",
+    "whatItIs": "A form of vitiman A that helps to prevent aging and stop acne. it can be purchased over the counter or prescribed.",
+    "howItWorks": "Retinol helps your skin make new cells faster, which keeps pores clear and prevents them from getting clogged. It also gently exfoliates and boosts collagen, so your skin looks smoother and fresher.",
+    "whoBenefits": "teens and adults who have acne, clogged pores (like blackheads and whiteheads), or uneven skin texture. It’s especially helpful if you’re dealing with regular breakouts or oily skin. It can also be good if you’re starting to notice early fine lines, but most teens use it mainly to keep acne under control and improve skin clarity.",
+    "evidence": "Supported by dermatological research from Cleveland Clinic.",
+    "evidenceUrl": "https://my.clevelandclinic.org"
+  }  
 ]
