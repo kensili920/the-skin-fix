@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500;600&family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 43% 94%;        /* #F6EBEB */
+    --foreground: 0 20% 18%;
+
+    --card: 0 43% 94%;
+    --card-foreground: 0 20% 18%;
+
+    --popover: 0 43% 94%;
+    --popover-foreground: 0 20% 18%;
+
+    --primary: 5 47% 84%;           /* #E9C7C3 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 47% 91%;         /* #F2E1E1 */
+    --secondary-foreground: 0 30% 40%;
+
+    --muted: 0 47% 91%;
+    --muted-foreground: 0 15% 45%;
+
+    --accent: 5 47% 84%;
+    --accent-foreground: 0 30% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 30% 86%;
+    --input: 0 30% 86%;
+    --ring: 5 47% 84%;
+
+    --radius: 0.5rem;
+
+    --hero-overlay: 0 30% 75%;
+    --section-alt: 0 47% 91%;       /* #F2E1E1 */
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+  }
+
+  .section-alt {
+    @apply bg-section-alt;
+  }
+
+  .script-heading {
+    @apply font-script text-foreground;
+  }
+
+  .ingredient-card {
+    @apply bg-card rounded-lg border border-border p-6 md:p-8 shadow-sm transition-shadow hover:shadow-md;
+  }
+
+  .evidence-note {
+    @apply text-sm italic text-muted-foreground mt-4 border-t border-border pt-3;
+  }
+
+  .lace-divider {
+    background-image: url('/src/assets/lace-decal.png');
+    background-repeat: repeat-x;
+    background-size: auto 60px;
+    background-position: center;
+    height: 60px;
+    width: 100%;
+    opacity: 0.9;
+  }
+}
