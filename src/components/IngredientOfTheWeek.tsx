@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import retinolImg from "@/assets/retinol.jpg";
+import niacinamideImg from "@/assets/niacinamide.JPG";
 
 const IngredientOfTheWeek = () => (
   <section id="iotw" className="section-padding section-alt">
@@ -8,8 +8,8 @@ const IngredientOfTheWeek = () => (
 
       <div className="grid md:grid-cols-2 gap-10 items-start">
         <motion.img
-          src={retinolImg}
-          alt="Retinol serum bottle"
+          src={niacinamideImg}
+          alt="niacinamide serum"
           className="rounded-lg shadow-md w-full max-w-sm mx-auto"
           loading="lazy" width={640} height={640}
           initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }}
