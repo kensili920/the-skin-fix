@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import niacinamideImg from "@/assets/niacinamide.JPG";
+import niacinamideImg from "../assets/niacinamide.JPG";
 
 const IngredientOfTheWeek = () => (
   <section id="iotw" className="section-padding section-alt">
