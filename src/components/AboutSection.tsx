@@ -23,8 +23,7 @@ const AboutSection = () => (
     <div className="grid md:grid-cols-2 gap-10 items-center mb-12">
       <div className="space-y-4 text-center md:text-left">
         {[
-          "Welcome to The Skin Fix. Let's be honest — you don't really know half the stuff you're putting on your face. That's where we come in.",
-          "Think of us as your quiet advisors, the ones who know the truth behind the hype.",
+          "Welcome to The Skin Fix. Let's be real, figuring out what's actually inside your skincare products can feel like a guessing game. That's where we come in.",
           "Every week, we dive into the products everyone's talking about, break down what's real, what's not, and help you figure out what actually works for your skin.",
         ].map((text, i) => (
           <motion.p
